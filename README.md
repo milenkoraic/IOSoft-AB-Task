@@ -35,6 +35,7 @@ Då hon precis startat verksamheten har hon inte lärt sig vare sig åtgång ell
 - Applikationen måste vara av typen **WEB SPA** med frontend i **Blazor**
 - UI elementen ska vara presenterade med ramverket **Bootstrap**
 - **Dependency Injection** måste tillämpas
-- Frontend ska se ut något i stil:
-* Gränssnitt med produkter
-* Interaktivt köpformulär
+
+### Frontend ska se ut något i stil:
+- Gränssnitt med produkter
+- Interaktivt köpformulär
