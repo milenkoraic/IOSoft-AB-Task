@@ -408,11 +408,8 @@ C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\LemonadeStand.RazorComponent.input.cache
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
-C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\RazorDeclaration\Pages\Kundorder.razor.g.cs
-C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\RazorDeclaration\Pages\Recipes.razor.g.cs
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
-C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\LemonadeStand.RazorComponent.output.cache
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\RazorDeclaration\LemonadeStand.dll
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\LemonadeStand.TagHelpers.input.cache
@@ -420,11 +417,8 @@ C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\LemonadeStand.RazorCoreGenerate.cache
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\Razor\App.razor.g.cs
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
-C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\Razor\Pages\Kundorder.razor.g.cs
-C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\Razor\Pages\Recipes.razor.g.cs
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
-C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\build-gz\hIJbwOVq.gz
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\build-gz\HreF8lCA.gz
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\build-gz\JriywIDv.gz
@@ -624,7 +618,6 @@ C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\staticwebassets\LemonadeStand.StaticWebAssets.Manifest.cache
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\staticwebassets\LemonadeStand.StaticWebAssets.xml
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\scopedcss\bundle\LemonadeStand.styles.css
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\scopedcss\projectbundle\LemonadeStand.bundle.scp.css
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\LemonadeStand.RazorTargetAssemblyInfo.cache
@@ -632,3 +625,4 @@ C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\LemonadeStand.dll
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\ref\LemonadeStand.dll
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\LemonadeStand.pdb
+C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\obj\Debug\net5.0\scopedcss\Pages\Index.razor.rz.scp.css

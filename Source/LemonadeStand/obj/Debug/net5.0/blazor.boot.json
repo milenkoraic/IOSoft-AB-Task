@@ -196,12 +196,12 @@
       "netstandard.dll": "sha256-4Ejn1oHpeqmTQlJx7Kjuipn0ZVOoG0hGncN+9qyL1lo=",
       "System.Private.CoreLib.dll": "sha256-7n\/jioZu+\/2tD7v1RgjTTrBrviX+kVwPFGJ\/JBsHQGA=",
       "MainLibrary.dll": "sha256-\/t5kdG\/aoxyum7OtUwRLwmnaTl93yaDEchtoTeD1qjA=",
-      "LemonadeStand.dll": "sha256-qYHbhXnpEC\/r6IH++wu1n23ar\/OmtANCwZ13PZiGY8A="
+      "LemonadeStand.dll": "sha256-322SNGb83jhapOKy95jS9UNdeICZYeXCbrGsYVteKj0="
     },
     "lazyAssembly": null,
     "pdb": {
       "MainLibrary.pdb": "sha256-9YTzmbl8b07SW8Out+XvvAep4+FhSKTKTI3IL+qjFrk=",
-      "LemonadeStand.pdb": "sha256-gcZxRmqqIj1GrxqWf6fn2FYIIOaW9+GsJeI1NejiC+0="
+      "LemonadeStand.pdb": "sha256-xvnHhqpsxlU0y0fDjFcRnyYQTVBR5hs+xEfStpyOqG8="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-Uv0JiOiPEvlGxygIhcdY8XYm\/Nt+zgVckKrqB2uih0w=",

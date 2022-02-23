@@ -84,20 +84,20 @@ using LemonadeStand.Shared;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\Pages\Index.razor"
-using System.Threading;
+using System.ComponentModel.DataAnnotations;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\Pages\Index.razor"
-using System.Globalization;
+using System.Text.Json;
 
 #line default
 #line hidden
 #nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
-    public partial class Index : Microsoft.AspNetCore.Components.ComponentBase, IDisposable
+    public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -105,48 +105,84 @@ using System.Globalization;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 13 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\Pages\Index.razor"
+#line 104 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\LemonadeStand\Pages\Index.razor"
        
-    private string currentDate;
-    private string currentTime;
-    private string currentWeek;
-    Timer clockTimer;
+    private OrderModel model = new OrderModel();
+    private EditContext editContext;
 
     protected override void OnInitialized()
     {
-        clockTimer = new Timer(Tick, null, 0, 1000);
+        editContext = new EditContext(model);
     }
 
-    public string GetCurrentWeek()
+    private void HandleValidSubmit()
     {
-        DateTime time = DateTime.Now;
-
-        DayOfWeek day = CultureInfo.InvariantCulture.Calendar.GetDayOfWeek(time);
-
-        if (day >= DayOfWeek.Monday && day <= DayOfWeek.Wednesday)
-        {
-            time = time.AddDays(3);
-        }
-
-        return CultureInfo.InvariantCulture.Calendar.GetWeekOfYear(time, CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Monday).ToString();
+        var modelJson = JsonSerializer.Serialize(model, new JsonSerializerOptions { WriteIndented = true });
+        JSRuntime.InvokeVoidAsync("alert", $"SUCCESS!! :-)\n\n{modelJson}");
     }
 
-    private void Tick(object _)
+    private void HandleReset()
     {
-        currentWeek = GetCurrentWeek();
-        currentDate = DateTime.Now.ToString("yyyy-MM-dd");
-        currentTime = DateTime.Now.ToString("HH:mm:ss");
-        InvokeAsync(StateHasChanged);
+        model = new OrderModel();
+        editContext = new EditContext(model);
     }
 
-    public void Dispose()
+    private interface IFruit
     {
-        clockTimer?.Dispose();
+        public string Name { get; }
+    }
+
+    private class Fruit:IFruit
+    {
+        public string Name { get; }
+    }
+
+    private interface IRecipe
+    {
+        string Name { get; }
+        Type AllowedFruit { get; }
+        decimal ConsumptionPerGlass { get; }
+        int PricePerGlass { get; }
+    }
+
+    private interface IFruitPressService
+    {
+       
+    }
+
+
+    private class OrderModel
+    {
+        [Required(AllowEmptyStrings = false, ErrorMessage = "You must select some recipe!")]
+        [Display(Name = "Recipe Name ")]
+        public string RecipeName { get; set; }
+
+        [Required]
+        [Display(Name = "Order Quantity")]
+        public int OrderQuantity { get; set; }
+
+        [Required]
+        [Display(Name = "Money Paid")]
+        public int MoneyPaid { get; set; }
+
+        [Required]
+        [Display(Name = "Apples Added")]
+        public int ApplesAdded { get; set; }
+
+        [Required]
+        [Display(Name = "Melons Added")]
+        public int MelonsAdded { get; set; }
+
+        [Required]
+        [Display(Name = "Oranges Added")]
+        public int OrangesAdded { get; set; }
+
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JSRuntime { get; set; }
     }
 }
 #pragma warning restore 1591

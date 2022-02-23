@@ -9,3 +9,4 @@ C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\MainLibrary\obj\Debug\net5.
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\MainLibrary\obj\Debug\net5.0\MainLibrary.dll
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\MainLibrary\obj\Debug\net5.0\ref\MainLibrary.dll
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\MainLibrary\obj\Debug\net5.0\MainLibrary.pdb
+C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\MainLibrary\obj\Debug\net5.0\MainLibrary.csproj.AssemblyReference.cache
