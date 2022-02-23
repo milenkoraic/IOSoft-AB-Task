@@ -1,0 +1,107 @@
+﻿@page "/kundorder"
+@using System.ComponentModel.DataAnnotations
+@using System.Text.Json
+@inject IJSRuntime JSRuntime;
+
+<h3>Kundorder</h3>
+    <section class="form-container" style="background:white;color:black;padding:10px;">
+        <div class="form-validation-errors">
+            This container will be used to log required validation logic and notifications on entry.
+        </div>
+        <EditForm EditContext="@editContext" OnValidSubmit="HandleValidSubmit" @onreset="HandleReset">
+            <DataAnnotationsValidator />
+            <div class="form-group col">
+                <label>Select recipe:</label>
+                <InputSelect @bind-Value="model.RecipeName" class="form-control">
+                    <option value="" selected></option>
+                    <option value="Apple Lemonade">Apple Lemonade</option>
+                    <option value="Melon Lemonade">Melon Lemonade</option>
+                    <option value="Orange Lemonade">Orange Lemonade</option>
+                </InputSelect>
+                <ValidationMessage For="@(() => model.RecipeName)" />
+            </div>
+            <div class="form-group col">
+                <label>Order quantity:</label>
+                <InputNumber @bind-Value="model.OrderQuantity" class="form-control" />
+                <ValidationMessage For="@(() => model.OrderQuantity)" />
+            </div>
+            <div class="form-group col">
+                <label>Money paid</label>
+                <InputNumber @bind-Value="model.MoneyPaid" class="form-control" />
+                <ValidationMessage For="@(() => model.MoneyPaid)" />
+            </div>
+            <div class="form-group col">
+                <label>Apples added:</label>
+                <InputNumber @bind-Value="model.ApplesAdded" class="form-control" />
+                <ValidationMessage For="@(() => model.ApplesAdded)" />
+            </div>
+            <div class="form-group col">
+                <label>Melons added:</label>
+                <InputNumber @bind-Value="model.MelonsAdded" class="form-control" />
+                <ValidationMessage For="@(() => model.MelonsAdded)" />
+            </div>
+            <div class="form-group col">
+                <label>Oranges added:</label>
+                <InputNumber @bind-Value="model.OrangesAdded" class="form-control" />
+                <ValidationMessage For="@(() => model.OrangesAdded)" />
+            </div>
+            <div class="text-right">
+                <button type="submit" class="btn btn-success mr-1">PROCESS ORDER</button>
+            </div>
+        </EditForm>
+    </section>
+
+@code {
+    private Model model = new Model();
+    private EditContext editContext;
+
+    protected override void OnInitialized()
+    {
+        editContext = new EditContext(model);
+    }
+
+    private void HandleValidSubmit()
+    {
+        var modelJson = JsonSerializer.Serialize(model, new JsonSerializerOptions { WriteIndented = true });
+        JSRuntime.InvokeVoidAsync("alert", $"SUCCESS!! :-)\n\n{modelJson}");
+    }
+
+    private void HandleReset()
+    {
+        model = new Model();
+        editContext = new EditContext(model);
+    }
+
+    private class Model
+    {
+        [Required]
+        [Display(Name = "Recipe Name ")]
+        public string RecipeName { get; set; }
+
+        [Required]
+        [Display(Name = "Order Quantity")]
+        public int OrderQuantity { get; set; }
+
+        [Required]
+        [Display(Name = "Money Paid")]
+        public int MoneyPaid { get; set; }
+
+        [Required]
+        [Display(Name = "Apples Added")]
+        public int ApplesAdded { get; set; }
+
+        [Required]
+        [Display(Name = "Melons Added")]
+        public int MelonsAdded { get; set; }
+
+        [Required]
+        [Display(Name = "Oranges Added")]
+        public int OrangesAdded { get; set; }
+
+
+    }
+}
+
+@code {
+
+}
