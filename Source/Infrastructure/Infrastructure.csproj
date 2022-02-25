@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Configuration\" />
+    <Folder Include="Context\" />
+    <Folder Include="Extension\" />
+    <Folder Include="Helper\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="Migration\" />
+    <Folder Include="Entity\" />
+    <Folder Include="Specification\" />
+    <Folder Include="Service\" />
+    <Folder Include="Resource\" />
+    <Folder Include="Repository\" />
+  </ItemGroup>
+
+</Project>

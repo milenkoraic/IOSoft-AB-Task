@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Configuration\" />
+    <Folder Include="Exception\" />
+    <Folder Include="Extension\" />
+    <Folder Include="Feature\" />
+    <Folder Include="Interface\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="Common\" />
+    <Folder Include="Validator\" />
+    <Folder Include="Specification\" />
+    <Folder Include="Serialization\" />
+    <Folder Include="Response\" />
+    <Folder Include="Resource\" />
+    <Folder Include="Request\" />
+  </ItemGroup>
+
+</Project>

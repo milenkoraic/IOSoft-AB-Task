@@ -1,0 +1,82 @@
+.card[b-8weqfyq497] {
+    background: whitesmoke;
+    color: black;
+    margin-bottom: 2rem;
+    border: 1px solid lightgray;
+}
+
+.btn[b-8weqfyq497] {
+    color: white;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+    .btn:hover[b-8weqfyq497], .btn:focus[b-8weqfyq497] {
+        box-shadow: #222 1px 0 10px;
+        text-decoration: none;
+    }
+
+.production-result[b-8weqfyq497]{
+    height:60px;
+    line-height:60px;
+    width:100%;
+    padding:5px;
+    padding-left:20px;
+    background: lightgray;
+    border-radius:10px;
+    margin-bottom:10px;
+    margin-top:10px;
+    color: gray;
+}
+
+input[b-8weqfyq497]{
+    background:aliceblue;
+}
+
+.form-validation[b-8weqfyq497] {
+    padding: 20px 50px;
+    background: #999999;
+    margin-bottom: 30px;
+}
+
+.validation-message[b-8weqfyq497] {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.invalid ~ .validation-message[b-8weqfyq497] {
+    display: block;
+}
+
+.form-container[b-8weqfyq497] {
+    background: white;
+    color: black;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.form-control.invalid[b-8weqfyq497] {
+    border-color: #dc3545;
+    padding-right: calc(1.5em + 0.75rem);
+}
+
+    .form-control.invalid:focus[b-8weqfyq497] {
+        border-color: #dc3545;
+        box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+    }
+
+textarea.form-control.invalid[b-8weqfyq497] {
+    padding-right: calc(1.5em + 0.75rem);
+    background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
+}
+
+.form-check-input.invalid ~ .form-check-label[b-8weqfyq497] {
+    color: #dc3545;
+}
+
+.form-check-input.invalid ~ .validation-message[b-8weqfyq497] {
+    display: block;
+}

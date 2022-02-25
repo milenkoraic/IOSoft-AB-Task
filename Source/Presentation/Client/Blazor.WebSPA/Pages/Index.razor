@@ -1,0 +1,138 @@
+﻿@page "/"
+@inject HttpClient Http;
+@using Domain.Entity;
+@using Domain.Service;
+@using Blazor.WebSPA.ViewModels;
+@using System.Text.Json;
+@using System.Collections.ObjectModel;
+@inject IJSRuntime JSRuntime;
+@inject CustomerOrderViewModel customerOrderViewModel;
+@inject IFruitPressService fruitPressService;
+@inject IRecipeService recipeService;
+
+<h2>Lemonade Stand Code Test</h2>
+<hr />
+
+<h3>Availible Recipes</h3>
+
+<div class="d-flex justify-content-start">
+    <div class="row">
+        @if (recipes == null)
+        {
+            <p><em>There is no availible recipes!</em></p>
+        }
+        else
+        {
+            @foreach (var recipe in recipes)
+            {
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="@recipe.Image" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">@recipe.Name</h5>
+                            <hr />
+                            <h6 class="card-subtitle mb-2">Price per glass:</h6>
+                            <p>@recipe.PricePerGlass SEK</p>
+                            <h6 class="card-text">Fruits needed per glass:</h6>
+                            <p>@recipe.ConsumptionPerGlass @recipe.AllowedFruit (s)</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+<h3>Customer Order</h3>
+
+<section class="form-container">
+    <div class="production-result">
+        <div class="row @classStatus">
+            <div class="col">
+                <span> @productionResult</span>
+            </div>
+        </div>
+    </div>
+    <EditForm EditContext="@editContext" OnValidSubmit="HandleValidSubmit" @onreset="HandleReset">
+        <DataAnnotationsValidator />
+        <div class="form-group col">
+            <label>Select recipe:</label>
+            <InputSelect @bind-Value="customerOrderViewModel.RecipeName" class="form-control">
+                <option value="" selected></option>
+                @if (recipes != null)
+                {
+                    @foreach (var recipe in recipes)
+                    {
+                        <option value="@recipe.Name">@recipe.Name</option>
+                    }
+                }
+            </InputSelect>
+            <ValidationMessage For="@(() => customerOrderViewModel.RecipeName)" />
+        </div>
+        <div class="form-group col">
+            <label>Order quantity:</label>
+            <InputNumber @bind-Value="customerOrderViewModel.OrderQuantity" class="form-control" />
+            <ValidationMessage For="@(() => customerOrderViewModel.OrderQuantity)" />
+        </div>
+        <div class="form-group col">
+            <label>Money paid</label>
+            <InputNumber @bind-Value="customerOrderViewModel.MoneyPaid" class="form-control" />
+            <ValidationMessage For="@(() => customerOrderViewModel.MoneyPaid)" />
+        </div>
+        <div class="form-group col">
+            <label>Apples added:</label>
+            <InputNumber @bind-Value="customerOrderViewModel.ApplesAdded" class="form-control" />
+            <ValidationMessage For="@(() => customerOrderViewModel.ApplesAdded)" />
+        </div>
+        <div class="form-group col">
+            <label>Melons added:</label>
+            <InputNumber @bind-Value="customerOrderViewModel.MelonsAdded" class="form-control" />
+            <ValidationMessage For="@(() => customerOrderViewModel.MelonsAdded)" />
+        </div>
+        <div class="form-group col">
+            <label>Oranges added:</label>
+            <InputNumber @bind-Value="customerOrderViewModel.OrangesAdded" class="form-control" />
+            <ValidationMessage For="@(() => customerOrderViewModel.OrangesAdded)" />
+        </div>
+        <div class="text-left">
+            <button type="submit" class="btn btn-success mr-1">PROCESS ORDER</button>
+        </div>
+    </EditForm>
+</section>
+
+@code {
+    private IEnumerable<Recipe> recipes;
+    private EditContext editContext;
+
+    private string productionResult;
+    private string classStatus = "";
+
+    private IRecipe recipe;
+    private string recipePrice { get; set; }
+    private Collection<IFruit> fruits;
+    private int moneyPaid;
+    private int orderedGlassQuantity;
+
+    protected override async Task OnInitializedAsync()
+    {
+        recipes = await recipeService.GetRecipesAsync();
+    }
+
+    protected override void OnInitialized()
+    {
+        editContext = new EditContext(customerOrderViewModel);
+    }
+
+    private void HandleValidSubmit()
+    {
+        //fruitPressService.Produce(recipe, fruits, moneyPaid, orderedGlassQuantity);
+        JSRuntime.InvokeVoidAsync("alert", $"SUCCESS!! :-)\n\n{JsonSerializer.Serialize(customerOrderViewModel, new JsonSerializerOptions { WriteIndented = true })}");
+        productionResult= "SUCCES";
+    }
+
+    private void HandleReset()
+    {
+        editContext = new EditContext(customerOrderViewModel);
+    }
+
+}
