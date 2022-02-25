@@ -25,7 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{4793BD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.WebServer", "Presentation\Server\Blazor.WebServer\Blazor.WebServer.csproj", "{89EE27E6-33D0-4021-A381-A98910831F6E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Tests", "QualityAssurance\DomainTests\Domain.Tests\Domain.Tests.csproj", "{4432FAC2-B362-4AFA-BF2C-F3E9BAD0FC71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Tests", "QualityAssurance\Domain.Tests\Domain.Tests.csproj", "{4432FAC2-B362-4AFA-BF2C-F3E9BAD0FC71}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.WebSPA", "Presentation\Client\Blazor.WebSPA\Blazor.WebSPA.csproj", "{FBECAB25-7F3D-455F-BE69-CD5B2DAF57EC}"
 EndProject
