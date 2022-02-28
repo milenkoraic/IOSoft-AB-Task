@@ -137,6 +137,16 @@ using Blazor.WebSPA.ViewModels;
         homeViewModel.Recipe = await recipeService.GetByIdAsync(id);
     }
 
+    private void ResetFieledValues()
+    {
+        covModel.Id = 1;
+        covModel.MoneyAmountReceived = 0;
+        covModel.OrderQuantity = 1;
+        covModel.AppleQuantity = 0;
+        covModel.MelonQuantity = 0;
+        covModel.OrangeQuantity = 0;
+    }
+
     private void HandleValidSubmit()
     {
         Dictionary<string, decimal> fruits = new();
@@ -146,12 +156,7 @@ using Blazor.WebSPA.ViewModels;
 
         var result = fruitPressService.Produce(homeViewModel.Recipe, fruits, covModel.MoneyAmountReceived, covModel.OrderQuantity);
 
-
-        string first = result.FirstOrDefault();
-        string status = first.Substring(0, 1);
-        Console.WriteLine(status);
-
-        if (status == "E")
+        if (result.FirstOrDefault().Substring(0, 1) == "E")
         {
             homeViewModel.StatusBG = "#F8D7DA";
             homeViewModel.StatusFC = "#A22029";
@@ -163,7 +168,6 @@ using Blazor.WebSPA.ViewModels;
         }
 
         homeViewModel.ProductionResult = String.Join("\n", result.ToArray());
-        Console.WriteLine(homeViewModel.ProductionResult);
     }
 
     private void HandleReset()

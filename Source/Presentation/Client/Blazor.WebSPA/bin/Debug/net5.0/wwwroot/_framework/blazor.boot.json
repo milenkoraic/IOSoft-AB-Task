@@ -219,13 +219,13 @@
       "mscorlib.dll": "sha256-0qsbc1acYr3S6P7t9gSYyghOhMVs3CTJ9ukQ1VXqksY=",
       "netstandard.dll": "sha256-4Ejn1oHpeqmTQlJx7Kjuipn0ZVOoG0hGncN+9qyL1lo=",
       "System.Private.CoreLib.dll": "sha256-7n\/jioZu+\/2tD7v1RgjTTrBrviX+kVwPFGJ\/JBsHQGA=",
-      "Domain.dll": "sha256-Lr+13ml2rZInHh7ITT6mmI6v81guyRMmci+XvN4686c=",
-      "Blazor.WebSPA.dll": "sha256-APSL7u8pVT\/zxNhh4xqY0G\/SLcaCeT0d7sorYJUdIXk="
+      "Domain.dll": "sha256-+jqMLTTOCywjxWIiDOP31AJN4WXlto7CusIHC1VfUHc=",
+      "Blazor.WebSPA.dll": "sha256-Tm8GvIIXHFHQG8PQJsFW4uGcSLtwlkEBklT4pcvDt9c="
     },
     "lazyAssembly": null,
     "pdb": {
-      "Domain.pdb": "sha256-T47TbGq3ewo+D6XGukI\/BpJk\/hqCMfzxlJZjXmx7ypY=",
-      "Blazor.WebSPA.pdb": "sha256-CTykv64gWzi7Kef1caX1eqJ9XS0Mg8k0Ppa\/sxfrA+w="
+      "Domain.pdb": "sha256-JXtFCJGFio9uaMwo67x72F\/7skjuNoVAmrqD98+I0AI=",
+      "Blazor.WebSPA.pdb": "sha256-qrMZtVyKF1UyAuF5jVHSZHjq\/zwmwa0xm0AvdDUsZQs="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-Uv0JiOiPEvlGxygIhcdY8XYm\/Nt+zgVckKrqB2uih0w=",
