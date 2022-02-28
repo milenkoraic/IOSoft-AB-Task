@@ -1,0 +1,10 @@
+﻿[
+  {
+    "Id": 3,
+    "Image": "/img/recipes/Orange-Juice.jpg",
+    "Name": "Orange Lemonade",
+    "PricePerGlass": 9,
+    "AllowedFruit": "Orange",
+    "ConsumptionPerGlass": 1
+  }
+]

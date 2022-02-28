@@ -6,16 +6,17 @@
 
   <ItemGroup>
     <Folder Include="Configuration\" />
-    <Folder Include="Context\" />
-    <Folder Include="Extension\" />
-    <Folder Include="Helper\" />
-    <Folder Include="Mapping\" />
+    <Folder Include="Contexts\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Mappings\" />
     <Folder Include="Migration\" />
-    <Folder Include="Entity\" />
-    <Folder Include="Specification\" />
-    <Folder Include="Service\" />
-    <Folder Include="Resource\" />
-    <Folder Include="Repository\" />
+    <Folder Include="Models\" />
+    <Folder Include="TagHelpers\" />
+    <Folder Include="Specifications\" />
+    <Folder Include="Services\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
 
 </Project>

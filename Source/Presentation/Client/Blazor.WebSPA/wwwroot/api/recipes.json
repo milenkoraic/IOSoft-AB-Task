@@ -1,5 +1,6 @@
 ﻿[
   {
+    "Id": 0,
     "Image": "/img/recipes/Apple-Juice.jpg",
     "Name": "Apple Lemonade",
     "PricePerGlass": 10,
@@ -7,6 +8,7 @@
     "ConsumptionPerGlass": 2.5
   },
   {
+    "Id": 1,
     "Image": "/img/recipes/Melon-Juice.jpg",
     "Name": "Melon Lemonade",
     "PricePerGlass": 12,
@@ -14,6 +16,7 @@
     "ConsumptionPerGlass": 0.5
   },
   {
+    "Id": 2,
     "Image": "/img/recipes/Orange-Juice.jpg",
     "Name": "Orange Lemonade",
     "PricePerGlass": 9,

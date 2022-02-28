@@ -83,36 +83,8 @@ using Blazor.WebSPA.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\Pages\Index.razor"
-using Domain.Entity;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 4 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\Pages\Index.razor"
-using Domain.Service;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 5 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\Pages\Index.razor"
-using Blazor.WebSPA.ViewModels;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 6 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\Pages\Index.razor"
-using System.Text.Json;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 7 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\Pages\Index.razor"
-using System.Collections.ObjectModel;
+#line 11 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\_Imports.razor"
+using Blazor.WebSPA.Components;
 
 #line default
 #line hidden
@@ -125,52 +97,6 @@ using System.Collections.ObjectModel;
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 102 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\Pages\Index.razor"
-       
-    private IEnumerable<Recipe> recipes;
-    private EditContext editContext;
-
-    private string productionResult;
-    private string classStatus = "";
-
-    private IRecipe recipe;
-    private string recipePrice { get; set; }
-    private Collection<IFruit> fruits;
-    private int moneyPaid;
-    private int orderedGlassQuantity;
-
-    protected override async Task OnInitializedAsync()
-    {
-        recipes = await recipeService.GetRecipesAsync();
-    }
-
-    protected override void OnInitialized()
-    {
-        editContext = new EditContext(customerOrderViewModel);
-    }
-
-    private void HandleValidSubmit()
-    {
-        //fruitPressService.Produce(recipe, fruits, moneyPaid, orderedGlassQuantity);
-        JSRuntime.InvokeVoidAsync("alert", $"SUCCESS!! :-)\n\n{JsonSerializer.Serialize(customerOrderViewModel, new JsonSerializerOptions { WriteIndented = true })}");
-        productionResult= "SUCCES";
-    }
-
-    private void HandleReset()
-    {
-        editContext = new EditContext(customerOrderViewModel);
-    }
-
-
-#line default
-#line hidden
-#nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IRecipeService recipeService { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IFruitPressService fruitPressService { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private CustomerOrderViewModel customerOrderViewModel { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JSRuntime { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591

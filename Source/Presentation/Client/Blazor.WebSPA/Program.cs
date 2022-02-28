@@ -1,5 +1,5 @@
 using Blazor.WebSPA.ViewModels;
-using Domain.Service;
+using Domain.Services;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -16,6 +16,7 @@ namespace Blazor.WebSPA
             builder.RootComponents.Add<App>("#app");
 
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            builder.Services.AddTransient<HomeViewModel>();
             builder.Services.AddTransient<CustomerOrderViewModel>();
             builder.Services.AddTransient<IFruitPressService, FruitPressResult>();
             builder.Services.AddSingleton<IRecipeService, RecipeService>();

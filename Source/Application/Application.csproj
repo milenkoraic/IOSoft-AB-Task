@@ -5,19 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Configuration\" />
+    <Folder Include="Configurations\" />
     <Folder Include="Exception\" />
     <Folder Include="Extension\" />
-    <Folder Include="Feature\" />
-    <Folder Include="Interface\" />
+    <Folder Include="Features\" />
+    <Folder Include="Interfaces\" />
     <Folder Include="Mapping\" />
-    <Folder Include="Common\" />
-    <Folder Include="Validator\" />
-    <Folder Include="Specification\" />
+    <Folder Include="Validators\" />
+    <Folder Include="Specifications\" />
     <Folder Include="Serialization\" />
-    <Folder Include="Response\" />
-    <Folder Include="Resource\" />
-    <Folder Include="Request\" />
+    <Folder Include="Responses\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Requests\" />
   </ItemGroup>
 
 </Project>
