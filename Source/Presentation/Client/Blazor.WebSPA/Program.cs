@@ -1,5 +1,8 @@
 using Blazor.WebSPA.ViewModels;
+using Blazor.WebSPA.ViewModels.Coctail;
+using Blazor.WebSPA.ViewModels.Juice;
 using Domain.Services;
+using Domain.Services.Juice;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -16,9 +19,12 @@ namespace Blazor.WebSPA
             builder.RootComponents.Add<App>("#app");
 
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-            builder.Services.AddTransient<HomeViewModel>();
-            builder.Services.AddTransient<CustomerOrderViewModel>();
-            builder.Services.AddTransient<IFruitPressService, FruitPressResult>();
+
+            builder.Services.AddSingleton<JuiceRecipeViewModel>();
+            builder.Services.AddSingleton<JuiceOrderViewModel>();
+
+            builder.Services.AddSingleton<CoctailRecipeViewModel>();
+            builder.Services.AddSingleton<IFruitPressService, FruitPressService>();
             builder.Services.AddSingleton<IRecipeService, RecipeService>();
 
             await builder.Build().RunAsync();

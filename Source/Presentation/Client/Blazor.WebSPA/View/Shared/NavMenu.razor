@@ -1,0 +1,53 @@
+﻿<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light custom-nav">
+    <div class="container-fluid shadow p-2 mb-3">
+        <a class="navbar-brand" href="">
+            <img src="/img/logo/logo-32.png" style="margin-right:10px;"/>
+            Anna's Lemonade Stand
+        </a>
+        <button class="navbar-toggler" type="button" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <NavLink class="nav-link text-light" href="" Match="NavLinkMatch.All">
+                        <i class="fa fa-home" aria-hidden="true"></i> Home
+                    </NavLink>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link text-light" href="juice">
+                        <i class="fas fa-blender" aria-hidden="true"></i> Juice
+                    </NavLink>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link text-light" href="coctail">
+                        <i class="fas fa-cocktail" aria-hidden="true"></i> Coctail
+                    </NavLink>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link text-light" href="coffee">
+                        <i class="fa fa-coffee" aria-hidden="true"></i> Coffee
+                    </NavLink>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link text-light" href="icecream">
+                        <i class="fas fa-ice-cream"></i> Ice Cream
+                    </NavLink>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+@code {
+    bool collapseNavMenu = true;
+
+    string baseMenuClass = "navbar-collapse d-sm-inline-flex flex-sm-row-reverse";
+
+    string NavMenuCssClass => baseMenuClass + (collapseNavMenu ? " collapse" : "");
+
+    void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

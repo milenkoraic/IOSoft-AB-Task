@@ -1,4 +1,6 @@
-﻿using Domain.Entities;
+﻿using Domain.Entities.Recipes.Coctail;
+using Domain.Entities.Recipes.Coffee;
+using Domain.Entities.Recipes.Juice;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -15,40 +17,101 @@ namespace Domain.Services
             BaseAddress = new Uri("https://localhost:44323/")
         };
 
-        private readonly string ApiPath = "api/";
-
-        private string JsonTemplate{ get; } = "/recipes.json";
-
-        public async Task<IEnumerable<Recipe>> GetAllAsync()
+        public async Task<IEnumerable<JuiceRecipe>> GetAllJuicesAsync()
         {
             httpClient.DefaultRequestHeaders.Accept.Clear();
             httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            using var request = new HttpRequestMessage(HttpMethod.Get, ApiPath + JsonTemplate);
+            using var request = new HttpRequestMessage(HttpMethod.Get, "/api/juice/juices.json");
             using var response = await httpClient.SendAsync(request);
             response.EnsureSuccessStatusCode();
-            var recipes = await response.Content.ReadFromJsonAsync<IEnumerable<Recipe>>();
-            return recipes;
+            var juices = await response.Content.ReadFromJsonAsync<IEnumerable<JuiceRecipe>>();
+            return juices;
         }
 
-        public async Task<Recipe> GetByIdAsync(int id)
+        public async Task<JuiceRecipe> GetJuiceByIdAsync(int id)
         {
             httpClient.DefaultRequestHeaders.Accept.Clear();
             httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            using var request = new HttpRequestMessage(HttpMethod.Get, ApiPath + id + JsonTemplate);
+            using var request = new HttpRequestMessage(HttpMethod.Get, "/api/juice/" + id + "/juice.json");
             using var response = await httpClient.SendAsync(request);
             response.EnsureSuccessStatusCode();
-            var recipes = await response.Content.ReadFromJsonAsync<List<Recipe>>();
+            var juices = await response.Content.ReadFromJsonAsync<List<JuiceRecipe>>();
 
-            Recipe recipe = new (){
-                Id = recipes[0].Id,
-                Name = recipes[0].Name,
-                Image = recipes[0].Image,
-                PricePerGlass = recipes[0].PricePerGlass,
-                ConsumptionPerGlass = recipes[0].ConsumptionPerGlass,
-                AllowedFruit = recipes[0].AllowedFruit
+            JuiceRecipe juice = new()
+            {
+                Id = juices[0].Id,
+                Name = juices[0].Name,
+                Image = juices[0].Image,
+                PricePerGlass = juices[0].PricePerGlass,
+                ConsumptionPerGlass = juices[0].ConsumptionPerGlass,
+                AllowedFruit = juices[0].AllowedFruit
             };
 
-            return recipe;
+            return juice;
+        }
+
+        public async Task<IEnumerable<CoctailRecipe>> GetAllCoctailsAsync()
+        {
+            httpClient.DefaultRequestHeaders.Accept.Clear();
+            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            using var request = new HttpRequestMessage(HttpMethod.Get, "/api/coctail/coctails.json");
+            using var response = await httpClient.SendAsync(request);
+            response.EnsureSuccessStatusCode();
+            var coctails = await response.Content.ReadFromJsonAsync<IEnumerable<CoctailRecipe>>();
+            return coctails;
+        }
+
+        public async Task<CoctailRecipe> GetCoctailByIdAsync(int id)
+        {
+            httpClient.DefaultRequestHeaders.Accept.Clear();
+            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            using var request = new HttpRequestMessage(HttpMethod.Get, "/api/coctail/" + id + "/coctail.json");
+            using var response = await httpClient.SendAsync(request);
+            response.EnsureSuccessStatusCode();
+            var coctails = await response.Content.ReadFromJsonAsync<List<CoctailRecipe>>();
+
+            CoctailRecipe coctail = new()
+            {
+                Id = coctails[0].Id,
+                Name = coctails[0].Name,
+                Image = coctails[0].Image,
+                PricePerGlass = coctails[0].PricePerGlass,
+                GlassQuantityPerMix = coctails[0].GlassQuantityPerMix,
+                CoctailQuantity = coctails[0].CoctailQuantity
+            };
+
+            return coctail;
+        }
+
+        public async Task<IEnumerable<CofeeRecipe>> GetAllCoffeesAsync()
+        {
+            httpClient.DefaultRequestHeaders.Accept.Clear();
+            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            using var request = new HttpRequestMessage(HttpMethod.Get, "/api/coffee/coffees.json");
+            using var response = await httpClient.SendAsync(request);
+            response.EnsureSuccessStatusCode();
+            var coffes = await response.Content.ReadFromJsonAsync<IEnumerable<CofeeRecipe>>();
+            return coffes;
+        }
+
+        public async Task<CofeeRecipe> GetCoffeeByIdAsync(int id)
+        {
+            httpClient.DefaultRequestHeaders.Accept.Clear();
+            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            using var request = new HttpRequestMessage(HttpMethod.Get, "/api/coffee/" + id + "/coffee.json");
+            using var response = await httpClient.SendAsync(request);
+            response.EnsureSuccessStatusCode();
+            var coffees = await response.Content.ReadFromJsonAsync<List<CofeeRecipe>>();
+
+            CofeeRecipe coffee = new()
+            {
+                Id = coffees[0].Id,
+                Name = coffees[0].Name,
+                Image = coffees[0].Image,
+                PricePerGlass = coffees[0].PricePerGlass
+            };
+
+            return coffee;
         }
     }
 }

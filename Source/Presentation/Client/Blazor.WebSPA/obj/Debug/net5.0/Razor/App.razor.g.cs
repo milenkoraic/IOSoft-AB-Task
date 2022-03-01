@@ -74,14 +74,14 @@ using Blazor.WebSPA;
 #nullable disable
 #nullable restore
 #line 10 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\_Imports.razor"
-using Blazor.WebSPA.Shared;
+using Blazor.WebSPA.View;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 11 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\_Imports.razor"
-using Blazor.WebSPA.View;
+using Blazor.WebSPA.View.Shared;
 
 #line default
 #line hidden
@@ -89,6 +89,34 @@ using Blazor.WebSPA.View;
 #nullable restore
 #line 12 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\_Imports.razor"
 using Blazor.WebSPA.View.Components;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\_Imports.razor"
+using Blazor.WebSPA.View.Components.Coctail;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\_Imports.razor"
+using Blazor.WebSPA.View.Components.Coffee;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\_Imports.razor"
+using Blazor.WebSPA.View.Components.Juice;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 16 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\_Imports.razor"
+using Blazor.WebSPA.View.Components.IceCream;
 
 #line default
 #line hidden

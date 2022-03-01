@@ -1,0 +1,20 @@
+﻿[
+  {
+    "Id": 0,
+    "Image": "/img/api/coffee/JamaicanBlueMountain.jpg",
+    "Name": "Jamaican Blue Mountain",
+    "PricePerGlass": 47
+  },
+  {
+    "Id": 1,
+    "Image": "/img/api/coffee/TurkishBlackCoffee.jpg",
+    "Name": "Turkish Black Coffee",
+    "PricePerGlass": 42
+  },
+  {
+    "Id": 2,
+    "Image": "/img/api/coffee/ItalianEspressoCoffee.jpg",
+    "Name": "Italian Espresso Coffee",
+    "PricePerGlass": 45
+  }
+]
