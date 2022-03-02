@@ -654,8 +654,8 @@ C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\obj\Debug\net5.0\RazorDeclaration\View\Pages\Careers.razor.g.cs
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\obj\Debug\net5.0\RazorDeclaration\View\Pages\Directions.razor.g.cs
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\obj\Debug\net5.0\RazorDeclaration\View\Pages\OnlineOrder.razor.g.cs
-C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\obj\Debug\net5.0\RazorDeclaration\View\Shared\Franchise.razor.g.cs
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\obj\Debug\net5.0\Razor\View\Pages\Careers.razor.g.cs
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\obj\Debug\net5.0\Razor\View\Pages\Directions.razor.g.cs
 C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\obj\Debug\net5.0\Razor\View\Pages\OnlineOrder.razor.g.cs
-C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\obj\Debug\net5.0\Razor\View\Shared\Franchise.razor.g.cs
+C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\obj\Debug\net5.0\RazorDeclaration\View\Pages\Franchise.razor.g.cs
+C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\obj\Debug\net5.0\Razor\View\Pages\Franchise.razor.g.cs

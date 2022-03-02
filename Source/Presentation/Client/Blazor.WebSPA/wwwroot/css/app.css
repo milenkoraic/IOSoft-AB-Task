@@ -2,27 +2,35 @@
 
     html, body {
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background-color: #329648 !important;
     }
 
-    a, .btn-link {
-        color: #0366d6;
+    #page-container {
+        position: relative;
+        min-height: 100vh;
     }
 
-    .btn-primary {
-        color: #fff;
-        background-color: #1b6ec2;
-        border-color: #1861ac;
+    #content-wrap {
+        padding-bottom: 3rem;
+        background-color: white !important;
     }
 
-    .main {
-        margin: 0;
-        padding: 0;
-        padding-top: 1.1rem;
+    #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 4.5rem; 
+        background-color: #329648 !important;
+        padding: 45px 0 20px;
+        font-size: 15px;
+        line-height: 24px;
+        color: lightgray;
     }
 
     .content {
-        padding-top: 1.1rem;
+        padding-top: 50px;
         margin:10px;
+        margin-bottom:100px;
     }
 
     #blazor-error-ui {

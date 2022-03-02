@@ -1,14 +1,6 @@
 @import '';
 
 /* /View/Shared/Components/Footer.razor.rz.scp.css */
-.site-footer[b-ca3ra5nyx1] {
-    background-color: #329648 !important;
-    padding: 45px 0 20px;
-    font-size: 15px;
-    line-height: 24px;
-    color: lightgray;
-}
-
     .site-footer hr[b-ca3ra5nyx1] {
         border-top-color: #bbb;
         opacity: 0.5
@@ -148,7 +140,7 @@
 }
 /* /View/Shared/Components/Header.razor.rz.scp.css */
 .page-header[b-x4rxrxft25] {
-    padding-top: 75px;
+    padding-top: 60px;
 }
 
 .header-cover[b-x4rxrxft25] {
@@ -323,3 +315,18 @@
     transform: translate(0%, 0%) rotate(0deg);
 }
 /* /View/Shared/Layout.razor.rz.scp.css */
+#page-container[b-onq1zezv3n] {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap[b-onq1zezv3n] {
+    padding-bottom: 2.5rem; /* Footer height */
+}
+
+#footer[b-onq1zezv3n] {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; /* Footer height */
+}
