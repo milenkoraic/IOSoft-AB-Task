@@ -155,11 +155,15 @@
 
 
 /* /View/Shared/Components/NavMenu.razor.rz.scp.css */
-    .navbar[b-hhjuav3za9] {
-        position:fixed !important;
-        z-index:1000;
-        width:100%;
-    }
+.navbar[b-hhjuav3za9] {
+    position: fixed !important;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    border-bottom:1px solid lightgray;
+}
 
     .navbar .navbar-brand[b-hhjuav3za9] {
 

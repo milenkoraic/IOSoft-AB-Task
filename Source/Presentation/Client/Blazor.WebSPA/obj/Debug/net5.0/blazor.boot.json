@@ -197,14 +197,14 @@
       "netstandard.dll": "sha256-bY3Q1RCB\/lmUAo5AG5YDHBu5uD8OxCGAiJ+wukrs1pw=",
       "System.Private.CoreLib.dll": "sha256-25IZl0xgoqOBdkTlEjUBLmiiRGYCYI1BaFevKzE+EHk=",
       "Domain.dll": "sha256-EH8VLdJwv1Nzl2zndufNVhn02qWOgqshZnYU1ubmRHE=",
-      "Blazor.WebSPA.dll": "sha256-o412B6EBFUkaWYX29n8yFJJcusWzy9WoeFVRQ1A9y\/g="
+      "Blazor.WebSPA.dll": "sha256-aNRCHn6URJgKXihBU7NS9\/s3tjmxr2YY64YH+zXITIw="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "Domain.pdb": "sha256-IJ+HLvz56bUtkZftZBmABwBnQvlIjr1yqkGg8fmlsZ8=",
-      "Blazor.WebSPA.pdb": "sha256-+SAhzWC2Ndq1+GCwIyw5nGzhGu\/nrf357lsGuMcwhcc="
+      "Blazor.WebSPA.pdb": "sha256-hu177NJ8Baa5WJzQtDoznp3AsbtvlZsC7aPVugfrB74="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-Ek+C0V\/4GBnUGH1\/X20UjHhjyp7se2MX+2RHWSpKSDE=",
