@@ -1,5 +1,4 @@
 ﻿using Domain.Entities.Recipes.Coctail;
-using Domain.Entities.Recipes.Coffee;
 using Domain.Entities.Recipes.Juice;
 using System;
 using System.Collections.Generic;
@@ -81,37 +80,6 @@ namespace Domain.Services
             };
 
             return coctail;
-        }
-
-        public async Task<IEnumerable<CofeeRecipe>> GetAllCoffeesAsync()
-        {
-            httpClient.DefaultRequestHeaders.Accept.Clear();
-            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            using var request = new HttpRequestMessage(HttpMethod.Get, "/api/coffee/coffees.json");
-            using var response = await httpClient.SendAsync(request);
-            response.EnsureSuccessStatusCode();
-            var coffes = await response.Content.ReadFromJsonAsync<IEnumerable<CofeeRecipe>>();
-            return coffes;
-        }
-
-        public async Task<CofeeRecipe> GetCoffeeByIdAsync(int id)
-        {
-            httpClient.DefaultRequestHeaders.Accept.Clear();
-            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            using var request = new HttpRequestMessage(HttpMethod.Get, "/api/coffee/" + id + "/coffee.json");
-            using var response = await httpClient.SendAsync(request);
-            response.EnsureSuccessStatusCode();
-            var coffees = await response.Content.ReadFromJsonAsync<List<CofeeRecipe>>();
-
-            CofeeRecipe coffee = new()
-            {
-                Id = coffees[0].Id,
-                Name = coffees[0].Name,
-                Image = coffees[0].Image,
-                PricePerGlass = coffees[0].PricePerGlass
-            };
-
-            return coffee;
         }
     }
 }

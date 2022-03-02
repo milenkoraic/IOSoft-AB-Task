@@ -15,10 +15,4 @@
     <ProjectReference Include="..\..\..\Domain\Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\api\icecream\0\" />
-    <Folder Include="wwwroot\api\icecream\1\" />
-    <Folder Include="wwwroot\api\icecream\2\" />
-  </ItemGroup>
-
 </Project>

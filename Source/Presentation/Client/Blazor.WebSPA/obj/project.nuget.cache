@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wrih+3IC1iCn8WGyK6nph+3t0hmaXlDq2VZ39pxcpsuw0o+lkOOvzqK1dztFItfMb3zddCMQttTpxUUcHEEejw==",
+  "dgSpecHash": "Az+6nnWNjbYbVyJolCvAvHAnThS+V+rZX4t+b+Q5tGvIaB5rH3twJkbDb1Vz8zffZv29z+ZKWJ/yKprfJJxE4w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrator\\Desktop\\IOSoft-AB-Task\\Source\\Presentation\\Client\\Blazor.WebSPA\\Blazor.WebSPA.csproj",
   "expectedPackageFiles": [
@@ -31,7 +31,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.13\\microsoft.netcore.app.runtime.browser-wasm.5.0.13.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.14\\microsoft.netcore.app.runtime.browser-wasm.5.0.14.nupkg.sha512"
   ],
   "logs": []
 }

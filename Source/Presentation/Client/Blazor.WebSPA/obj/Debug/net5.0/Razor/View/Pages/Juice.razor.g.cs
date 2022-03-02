@@ -88,35 +88,28 @@ using Blazor.WebSPA.View.Shared;
 #nullable disable
 #nullable restore
 #line 12 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\_Imports.razor"
-using Blazor.WebSPA.View.Components;
+using Blazor.WebSPA.View.Shared.Components;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 13 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\_Imports.razor"
-using Blazor.WebSPA.View.Components.Coctail;
+using Blazor.WebSPA.View.Pages.Components;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 14 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\_Imports.razor"
-using Blazor.WebSPA.View.Components.Coffee;
+using Blazor.WebSPA.View.Pages.Components.Coctail;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 15 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\_Imports.razor"
-using Blazor.WebSPA.View.Components.Juice;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 16 "C:\Users\Administrator\Desktop\IOSoft-AB-Task\Source\Presentation\Client\Blazor.WebSPA\_Imports.razor"
-using Blazor.WebSPA.View.Components.IceCream;
+using Blazor.WebSPA.View.Pages.Components.Juice;
 
 #line default
 #line hidden
@@ -127,10 +120,10 @@ using Blazor.WebSPA.View.Components.IceCream;
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
-            __builder.OpenComponent<Blazor.WebSPA.View.Components.Juice.JuiceRecipes>(0);
+            __builder.OpenComponent<Blazor.WebSPA.View.Pages.Components.Juice.JuiceRecipes>(0);
             __builder.CloseComponent();
             __builder.AddMarkupContent(1, "\r\n\r\n");
-            __builder.OpenComponent<Blazor.WebSPA.View.Components.Juice.JuiceOrder>(2);
+            __builder.OpenComponent<Blazor.WebSPA.View.Pages.Components.Juice.JuiceOrder>(2);
             __builder.CloseComponent();
         }
         #pragma warning restore 1998
